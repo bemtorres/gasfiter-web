@@ -1,8 +1,8 @@
 
 
-const CACHE_STATIC_NAME  = 'static-v1';
-const CACHE_DYNAMIC_NAME = 'dynamic-v1';
-const CACHE_INMUTABLE_NAME = 'inmutable-v1';
+const CACHE_STATIC_NAME  = 'static-v2';
+const CACHE_DYNAMIC_NAME = 'dynamic-v2';
+const CACHE_INMUTABLE_NAME = 'inmutable-v2';
 
 const CACHE_DYNAMIC_LIMIT = 50;
 
@@ -59,7 +59,6 @@ self.addEventListener('install', e => {
             
                 return cache.addAll([
                     '/css/animate.css',
-                    'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
                     '/css/bootstrap.css',
                     '/css/jquery.bxslider.css',
                     '/css/jquery.cslider.css',
@@ -71,9 +70,7 @@ self.addEventListener('install', e => {
                     '/js/jquery.bxslider.js',
                     '/js/jquery.cslider.js',
                     '/js/jquery.placeholder.js',
-                    '/js/jquery.inview.js',
-                    '/js/jquery.bxslider.js',
-                    'http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext'
+                    '/js/jquery.inview.js'
                 ]);
     
             
@@ -90,8 +87,7 @@ self.addEventListener('fetch', e=>{
         .then( res => {
 
 
-            console.log(res);
-
+            
             if ( res ) return res;
 
             // No existe el archivo
