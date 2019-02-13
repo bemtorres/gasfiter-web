@@ -48,7 +48,8 @@ self.addEventListener('install', e => {
                 '/images/img/constru.png',
                 '/css/pluton.css',
                 '/images/ico/icons.png',
-                '/images/ico/favicon.ico'
+                '/images/ico/favicon.ico',
+                '/manifest.json'
             ]);
 
         
